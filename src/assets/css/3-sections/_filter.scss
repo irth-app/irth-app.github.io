@@ -1,0 +1,33 @@
+.filter {
+    margin-bottom: 15px;
+
+    input[type="radio"], input[type="checkbox"] {
+        &:checked + label {
+            background-color: #eff0f1;
+            color: $text-color;
+        }
+    }
+
+    .input-group > .input-group-prepend {
+         > .btn:first-of-type{
+            border-top-left-radius: 0.25rem;
+            border-bottom-left-radius: 0.25rem;
+        }
+        > .btn:last-of-type{
+            border-top-right-radius: 0.25rem;
+            border-bottom-right-radius: 0.25rem;
+        }
+    }
+
+    .filter-star .btn {
+        padding: 0px 20px;
+    }
+
+    .full-width {
+        width: 100%;
+    }
+}
+.col-xs-6 {
+    @extend .col-sm-6;
+    width: 50%;
+}

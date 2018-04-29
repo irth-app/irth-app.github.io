@@ -14,22 +14,22 @@
     {
       "name": "Hospital 1",
       "rating": 4,
-      "location": "Lorem ipsum dolor sit amet, consectetur adipisicing elit"
+      "location": "123 Fake St, Cambridge MA 20192"
     },
     {
       "name": "Hospital 2",
-      "rating": 4,
-      "location": "Lorem ipsum dolor sit amet, consectetur adipisicing elit"
+      "rating": 3,
+      "location": "123 Fake St, Cambridge MA 20192"
     },
     {
       "name": "Hospital 3",
-      "rating": 4,
-      "location": "Lorem ipsum dolor sit amet, consectetur adipisicing elit"
+      "rating": 5,
+      "location": "123 Fake St, Cambridge MA 20192"
     },
     {
       "name": "Hospital 4",
-      "rating": 4,
-      "location": "Lorem ipsum dolor sit amet, consectetur adipisicing elit"
+      "rating": 1,
+      "location": "123 Fake St, Cambridge MA 20192"
     }
   ]
 }

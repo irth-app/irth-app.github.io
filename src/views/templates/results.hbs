@@ -2,12 +2,87 @@
 {{#content "content" mode="prepend"}}
     <div class="results-page">
         <div  class="container">
+
+            <!-- Filter -->
+            <div class="filter">
+                <div class="row">
+                    <div class="col-xs-6">
+                        <button class="btn btn-outline-secondary" type="button" data-toggle="collapse" data-target="#collapseFilter" aria-expanded="false" aria-controls="collapseExample">
+                        Filters
+                        </button>
+
+                    </div>
+                    <div class="col-xs-6">
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend ml-auto">
+                              <input type="radio" name="show" id="show-list" class="d-none" checked>
+                              <label class="btn btn-outline-secondary" for="show-list"> List</label>
+                              <input type="radio" name="show" id="show-map" class="d-none">
+                              <label class="btn btn-outline-secondary" for="show-map"> Map</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Filter Expranded -->
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="collapse" id="collapseFilter">
+                          <div class="card card-body">
+                              <div class="row">
+                                  <div class="col-sm-12">
+                                      Sort By:
+                                      <div class="input-group mb-3">
+                                          <div class="input-group-prepend mb-3">
+                                            <input type="radio" name="sort" id="sort-distance" class="d-none" checked>
+                                            <label class="btn btn-outline-secondary" for="sort-distance">Distance</label>
+                                            <input type="radio" name="sort" id="sort-Rating" class="d-none">
+                                            <label class="btn btn-outline-secondary" for="sort-Rating"> Rating</label>
+                                          </div>
+                                      </div>
+                                  </div>
+                                </div>
+                              <div class="row">
+                                  <div class="col-sm-12">
+                                      Filter By:
+                                      <div class="input-group mb-3 filter-star">
+                                          <div class="input-group-prepend mb-3">
+                                            <input type="checkbox" name="filter-star" id="filter-1-star" class="d-none" >
+                                            <label class="btn btn-outline-secondary text-orange" for="filter-1-star">1★</label>
+                                            <input type="checkbox" name="filter-star" id="filter-2-star" class="d-none" >
+                                            <label class="btn btn-outline-secondary text-orange" for="filter-2-star">2★</label>
+                                            <input type="checkbox" name="filter-star" id="filter-3-star" class="d-none" >
+                                            <label class="btn btn-outline-secondary text-orange" for="filter-3-star">3★</label>
+                                            <input type="checkbox" name="filter-star" id="filter-4-star" class="d-none" >
+                                            <label class="btn btn-outline-secondary text-orange" for="filter-4-star">4★</label>
+                                            <input type="checkbox" name="filter-star" id="filter-5-star" class="d-none" >
+                                            <label class="btn btn-outline-secondary text-orange" for="filter-5-star">5★</label>
+                                          </div>
+                                      </div>
+
+                                      <input type="checkbox" name="foo1" id="foo1" class="d-none" >
+                                      <label class="btn btn-outline-secondary text-orange full-width" for="filter-5-star">
+                                          Some Other Criteria
+                                      </label>
+
+                                      <input type="checkbox" name="foo1" id="foo1" class="d-none" >
+                                      <label class="btn btn-outline-secondary text-orange full-width" for="filter-5-star">
+                                          Yet Other Criteria
+                                      </label>
+                                  </div>
+                                </div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Results List -->
             <div class="row">
                 <div class="col-sm-12">
                     <ul class="list-unstyled">
                       {{#each results}}
-                      <li>
-
+                      <li class="card-block">
                           <div class="card-group">
                               <div class="card">
                                 <div class="card-body">
@@ -21,7 +96,11 @@
                               </div>
                               <div class="card">
                                 <div class="card-body">
-                                  <p class="card-text text-orange">{{rating}}★</p>
+                                      <ul class="list-inline text-orange">
+                                          {{#for rating}}
+                                          <li class="list-inline-item">★</li>
+                                          {{/for}}
+                                      </ul>
                                 </div>
                               </div>
                             </div>
