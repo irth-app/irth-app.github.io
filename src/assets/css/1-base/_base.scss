@@ -95,20 +95,7 @@ p {
 		color: $white;
 	}
 }
-input[type='text'], input[type='email'], input[type='url'] {
-	padding: 0 16px;
-	height: 40px;
-	border: 1px solid $border-color;
-	@include box-shadow(none);
-	&:focus {
-		border: 1px solid $main-color;
-		outline: none;
-		@include box-shadow(none);
-	}
-}
-.form-control {
-	height: 40px;
-}
+
 figcaption {
 	text-align: center;
 	font-size: 12px;
@@ -186,4 +173,7 @@ dd, dt {
     font-family: 'Rubik', 'Open-Sans', sans-serif;
     font-weight: normal;
     font-style: normal;
+}
+.text-orange {
+    color: $orange;
 }

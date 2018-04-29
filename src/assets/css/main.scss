@@ -9,8 +9,11 @@
 @import "1-base/base";
 
 @import "2-modules/table";
+@import "2-modules/forms";
+
 @import "3-sections/404";
 @import "3-sections/header";
 
 @import "4-layouts/home";
 @import "4-layouts/search";
+@import "4-layouts/results";

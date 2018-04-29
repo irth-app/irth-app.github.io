@@ -1,0 +1,27 @@
+.side-lines {
+    span {
+        text-transform: uppercase;
+        position: relative;
+        padding: 0 5px;
+        color: $orange;
+        font-size: 16px;
+    }
+    span:before,
+    span:after {
+        background: $orange;
+        content: "";
+        display: block;
+        height: 1px;
+        position: absolute;
+        top: 50%;
+        width: 70%;
+    }
+    span:before {
+        right: 100%;
+    }
+    span:after {
+        left: 100%;
+    }
+    overflow: hidden;
+    text-align: center;
+}

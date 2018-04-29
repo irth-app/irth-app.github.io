@@ -106,7 +106,7 @@ gulp.task("fonts", function() {
 });
 
 gulp.task("templates", function() {
-  var templateData = yaml.safeLoad(fs.readFileSync("data.yml", "utf-8"));
+  var templateData = yaml.safeLoad(fs.readFileSync("data.json", "utf-8"));
   var options = {
     ignorePartials: true, //ignores the unknown footer2 partial in the handlebars template, defaults to false
     batch: ["./src/views/partials/", "./src/views/layouts/"],

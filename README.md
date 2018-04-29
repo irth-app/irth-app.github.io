@@ -1,13 +1,3 @@
-[![forthebadge](http://forthebadge.com/images/badges/60-percent-of-the-time-works-every-time.svg)]()
-[![forthebadge](http://forthebadge.com/images/badges/built-with-love.svg)]()
-[![forthebadge](http://forthebadge.com/images/badges/uses-html.svg)]()
-[![forthebadge](http://forthebadge.com/images/badges/uses-css.svg)]()
-[![forthebadge](http://forthebadge.com/images/badges/uses-git.svg)]()
-[![forthebadge](http://forthebadge.com/images/badges/uses-js.svg)]()
-[![forthebadge](http://forthebadge.com/images/badges/powered-by-netflix.svg)]()
-[![forthebadge](http://forthebadge.com/images/badges/winter-is-coming.svg)]()
-[![](http://forthebadge.com/images/badges/check-it-out.svg)]()
-
 IRTH README
 ========================================
 ## Setup
@@ -84,6 +74,10 @@ Runs `gulp watch` in the background, and serves the `dist` directory at `localho
 ## Stylesheets
 
 Any new files created under src/assets/css *must* be added to  src/assets/css/main.scss.
+
+## Stylesheets
+
+Add new pages under src/views/templates. Context data can be added to data.yml.
 
 [browsersync]: http://www.browsersync.io/
 [gulp]: http://gulpjs.com/
