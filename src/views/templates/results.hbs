@@ -2,22 +2,38 @@
 {{#content "content" mode="prepend"}}
     <div class="results-page">
         <div  class="container">
-
             <!-- Filter -->
             <div class="filter">
                 <div class="row">
                     <div class="col-xs-6">
-                        <button class="btn btn-outline-secondary" type="button" data-toggle="collapse" data-target="#collapseFilter" aria-expanded="false" aria-controls="collapseExample">
+                        <button class="btn btn-outline-secondary" type="button" data-toggle="collapse" data-target="#collapseFilter" aria-expanded="false" aria-controls="collapseFilter">
                         Filters
                         </button>
-
                     </div>
                     <div class="col-xs-6">
+                        <!-- <div id="tab" class="btn-group btn-group-justified" data-toggle="buttons">
+                            <a href="#prices" class="btn btn-default active" data-toggle="tab">
+                              <input type="radio" />Prices
+                            </a>
+                            <a href="#features" class="btn btn-default" data-toggle="tab">
+                              <input type="radio" />Features
+                            </a>
+                            <a href="#requests" class="btn btn-default" data-toggle="tab">
+                              <input type="radio" />Requests
+                            </a>
+                            <a href="#contact" class="btn btn-default" data-toggle="tab">
+                              <input type="radio" />Contact
+                            </a>
+                          </div> -->
+                        <!-- <div class="btn-group" role="group" aria-label="Basic example" id="myTab" role="tablist">
+                          <a class="btn btn-outline-secondary active" data-toggle="tab" href="#listView" role="tab" aria-controls="home" aria-selected="true">List</a>
+                          <a class="btn btn-outline-secondary" data-toggle="tab" href="#mapView" role="tab" aria-controls="home" aria-selected="true">Map</a>
+                        </div> -->
                         <div class="input-group mb-3">
                             <div class="input-group-prepend ml-auto">
-                              <input type="radio" name="show" id="show-list" class="d-none" checked>
+                              <input type="radio" name="show" id="show-list" class="d-none" checked data-target="#listView" role="tab">
                               <label class="btn btn-outline-secondary" for="show-list"> List</label>
-                              <input type="radio" name="show" id="show-map" class="d-none">
+                              <input type="radio" name="show" id="show-map" class="d-none" data-target="#mapView" aria-expanded="false" aria-controls="mapView">
                               <label class="btn btn-outline-secondary" for="show-map"> Map</label>
                             </div>
                         </div>
@@ -78,36 +94,43 @@
 
 
             <!-- Results List -->
-            <div class="row">
-                <div class="col-sm-12">
-                    <ul class="list-unstyled">
-                      {{#each results}}
-                      <li class="card-block">
-                          <div class="card-group">
-                              <div class="card">
-                                <div class="card-body">
-                                  <h5 class="card-title">{{name}}</h5>
+            <div class="">
+                <div class="row" class="show fade" id="listView" role="tabpanel" aria-labelledby="listView">
+                    <div class="col-sm-12">
+                        <ul class="list-unstyled">
+                          {{#each results}}
+                          <li class="card-block">
+                              <div class="card-group">
+                                  <div class="card">
+                                    <div class="card-body">
+                                      <h5 class="card-title result-link"><a href="hospital">{{name}}</a></h5>
+                                    </div>
+                                  </div>
+                                  <div class="card">
+                                    <div class="card-body">
+                                      <p class="card-text">{{location}}</p>
+                                    </div>
+                                  </div>
+                                  <div class="card">
+                                    <div class="card-body">
+                                          <ul class="list-inline text-orange text-center">
+                                              {{#for rating}}
+                                              <li class="list-inline-item">★</li>
+                                              {{/for}}
+                                          </ul>
+                                    </div>
+                                  </div>
                                 </div>
-                              </div>
-                              <div class="card">
-                                <div class="card-body">
-                                  <p class="card-text">{{location}}</p>
-                                </div>
-                              </div>
-                              <div class="card">
-                                <div class="card-body">
-                                      <ul class="list-inline text-orange">
-                                          {{#for rating}}
-                                          <li class="list-inline-item">★</li>
-                                          {{/for}}
-                                      </ul>
-                                </div>
-                              </div>
-                            </div>
 
-                        </li>
-                      {{/each}}
-                    </ul>
+                            </li>
+                          {{/each}}
+                        </ul>
+                    </div>
+                </div>
+                <div class="row" class="fade" id="mapView" role="tabpanel" aria-labelledby="mapView">
+                    <div class="col-sm-12">
+
+                    </div>
                 </div>
             </div>
         </div>

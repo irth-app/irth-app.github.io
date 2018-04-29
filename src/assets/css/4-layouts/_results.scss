@@ -18,4 +18,12 @@
     li.card-block {
         margin-bottom: 15px;
     }
+
+    .result-link {
+        margin-bottom: 0;
+        a {
+            color: $text-color-dark;
+            text-decoration: none;
+        }
+    }
 }

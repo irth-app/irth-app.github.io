@@ -10,6 +10,24 @@
     "google_analytics_id": "",
     "theme_color": ""
   },
+  "rating": [
+      {
+          "label": "Overall",
+          "rating": 3
+      },
+      {
+          "label": "Doctors",
+          "rating": 2
+      },
+      {
+          "label": "Nurses",
+          "rating": 5
+      },
+      {
+          "label": "Lactation Staff",
+          "rating": 3
+      },
+  ],
   "results": [
     {
       "name": "Hospital 1",
@@ -31,5 +49,29 @@
       "rating": 1,
       "location": "123 Fake St, Cambridge MA 20192"
     }
-  ]
+],
+  "rating": [
+      {
+          "profile": "https://randomuser.me/api/portraits/women/92.jpg",
+          "headline": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor",
+          "rating": 4
+      },
+      {
+          "profile": "https://randomuser.me/api/portraits/women/2.jpg",
+          "headline": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor",
+          "rating": 5
+      },
+      {
+          "profile": "https://randomuser.me/api/portraits/women/9.jpg",
+          "headline": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor",
+          "rating": 3
+      },
+      {
+          "profile": "https://randomuser.me/api/portraits/women/36.jpg",
+          "headline": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor",
+          "rating": 2
+      },
+]
+
+
 }

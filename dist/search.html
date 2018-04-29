@@ -1,7 +1,7 @@
 <!-- A normal content page with header/footer -->
 
 <!DOCTYPE html5>
-<html lang="en">
+<html lang="en"  class="no-js">
 <head>
     <meta charset="utf-8" />
     <title>Irth prototype</title>
@@ -60,6 +60,11 @@
         ga('create', '', 'auto');
         ga('send', 'pageview');
     </script>
+    <style>
+        .no-js body{
+            display: none;
+        }
+    </style>
 </head>
 <body class="has-fixed-navbar">
         <nav class="navbar navbar-expand-md navbar-dark fixed-top">
@@ -106,7 +111,7 @@
             </div>
             <div class="row">
                 <div class="col-sm-12 text-center">
-                    <a class="btn btn-outline-secondary" href="results">Go</a>
+                    <a class="btn btn-outline-secondary" href="../results">Go</a>
                 </div>
             </div>
         </form>

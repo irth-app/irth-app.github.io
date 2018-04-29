@@ -1,0 +1,68 @@
+{{#extend "page"}}
+{{#content "content" mode="prepend"}}
+    <div class="hospital-page">
+        <form  class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h1>Mt. Sinai Hospital</h1>
+                    <i class="add">Thurber Ave, Brockton, MA 02301</i>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6 offset-6">
+                    <label for="country" class=" d-inline">Rating By</label>
+                    <select class="custom-select w-50 d-inline" id="rating" required="">
+                      <option value="">All</option>
+                      <option>Race</option>
+                      <option>Religion</option>
+                      <option>Orientation</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <div id="chart" style="width: 85vw"></div>
+                </div>
+            </div>
+            <div class="ratings">
+                <h2 class="col-sm-2 text-center side-lines">
+                    <span>Rating</span>
+                </h2>
+                <!-- <h2>Rating</h2> -->
+                {{#each rating}}
+                <div class="row">
+                    <div class="col-6">
+                        <label for="country" class="text-uppercase d-inline ">{{label}}</label>
+                    </div>
+                    <div class="col-6 text-center">
+                        <span class="text-orange">
+                            {{#for rating}}
+                            ★
+                            {{/for}}
+                        </span>
+                    </div>
+                </div>
+                {{/each}}
+            </div>
+            <div class="reviews">
+                <h2 class="col-sm-2 text-center side-lines">
+                    <span>Reviews</span>
+                </h2>
+                <div class="row">
+                    <div class="col-12">
+                        <ul>
+                            {{#each reviews}}
+                            <li>
+                                <img class="col-sm-2 rounded-circle" src="{{profile}}">
+                                <div col-sm-8>
+                                    {{headline}}
+                                </div>
+                            </li>
+                            {{/each}}
+                        </ul>
+                    </div>
+                </div>
+        </form>
+    </div>
+{{/content}}
+{{/extend}}
