@@ -1,0 +1,30 @@
+.logo {
+    font-size: 8rem;
+    color: $orange-light;
+    display: block;
+    line-height: 1;
+    text-align: center;
+}
+
+.home {
+    height: 100vh;
+    margin-top: -56px;
+    position: relative;
+    background: $orange; /* Old browsers */
+    background: -moz-linear-gradient(-45deg, $orange 0%, $orange-light 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, $orange 0%,$orange-light 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, $orange 0%,$orange-light 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$orange', endColorstr='$orange-light',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+.center-v {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.description {
+    color: white;
+    line-height: 1.1;
+    text-align: center;
+}

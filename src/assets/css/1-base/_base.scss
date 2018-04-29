@@ -88,6 +88,9 @@ a {
 		outline: none;
 	}
 }
+a.btn {
+    text-decoration: none;
+}
 p {
 	margin-bottom: 30px;
 }
@@ -121,12 +124,16 @@ p {
 	}
 }
 .btn-primary {
-	background-color: $main-color;
-	border-color: $main-color;
+    background: lighten($orange, 30%);
+    border-radius: 4em;
+    border-color: lighten($orange, 30%);
+    text-transform: none;
+	// background-color: $main-color;
+	// border-color: $main-color;
 	color: $white;
 	&:hover, &:focus, &:active, &:active:hover, &:active:focus {
-		background-color: darken($main-color, 10%);
-		border: 1px solid darken($main-color, 10%);
+		background-color: darken($orange, 10%);
+		border: 1px solid darken($orange, 10%);
 		color: $white;
 	}
 }
