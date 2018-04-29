@@ -1,7 +1,11 @@
+<!-- A normal content page with header/footer -->
+
 {{#extend "base"}}
 {{#content "main" mode="prepend"}}
-    {{#header}}
-    {{#block "content"}}{{/block}}
-    {{#footer}}
+    {{> header}}
+    <main>
+        {{#block "content"}}{{/block}}
+        {{> footer}}
+    </main>
 {{/content}}
 {{/extend}}

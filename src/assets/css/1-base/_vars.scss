@@ -3,9 +3,12 @@ $main-color: #27AE60;
 
 $white: #ffffff;
 $black: #000000;
+// $orange: #ff8134;  <-- Fails WCAG AA Contrast
+$orange: #CC4E00;
+$orange-light: #ffa634;
 
-$border-color: #95A5A6;
+$border-color: #51565f;
 
-$text-color: #34495E;
-$text-color-dark: #2C3E50;
-$text-color-light: #7F8C8D;
+$text-color: #51565f;
+$text-color-dark: $orange;
+$text-color-light: $orange-light;

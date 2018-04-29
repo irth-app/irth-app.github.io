@@ -1,10 +1,15 @@
 body {
-	font-family: 'Open Sans', sans-serif;
+
+    font-family: 'Rubik', 'Open-Sans', sans-serif;
+    font-weight: normal;
+    font-style: normal;
 	font-size: 14px;
 	line-height: 24px;
+    color: $text-color;
 	 -webkit-font-smoothing: antialiased !important;
 	&.has-fixed-navbar {
-		margin-top: 80px;
+        min-height: 75rem;
+        padding-top: 4.5rem;
 	}
 }
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
@@ -40,6 +45,7 @@ h6, .h6 {
 }
 a {
 	color: $main-color;
+    text-decoration: underline;
 	@include transition(all 0.2s);
 	&:hover, &:focus {
 		color: darken($main-color, 10%);
@@ -170,4 +176,14 @@ dd, dt {
 }
 .align-center {
 	text-align: center;
+}
+.ff-cursive {
+    font-family: 'Youngblood';
+    font-weight: normal;
+    font-style: normal;
+}
+.ff-sans {
+    font-family: 'Rubik', 'Open-Sans', sans-serif;
+    font-weight: normal;
+    font-style: normal;
 }

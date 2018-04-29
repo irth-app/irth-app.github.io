@@ -21,7 +21,6 @@ npm install -g gulp  # May require `sudo`
 
 ```bash
 yarn install            # One time
-gulp serve
 ```
 
 - Use [Handlebars.js][handlebars] to keep our HTML organized into templates and partials.
@@ -81,6 +80,10 @@ Runs `gulp watch` in the background, and serves the `dist` directory at `localho
         ├── partials/       # Handlebars HTML partials that are included
         └── templates/      # Handlebars HTML files, one per page on the site.
 ```
+
+## Stylesheets
+
+Any new files created under src/assets/css *must* be added to  src/assets/css/main.scss.
 
 [browsersync]: http://www.browsersync.io/
 [gulp]: http://gulpjs.com/
