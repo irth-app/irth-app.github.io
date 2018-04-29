@@ -1,10 +1,9 @@
 {
-  "name": "frontend-starter",
+  "name": "irth",
   "version": "1.0.0",
-  "description": "Frontend boilerplate for local frontend web development.",
-  "author": "Rakshan Shetty",
+  "description": "Frontend prototype for 'irth'",
+  "author": "Yvonne Takane, Emily Bottis",
   "license": "ISC",
-  "keywords": ["boilerplate", "starterkit", "webpack"],
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

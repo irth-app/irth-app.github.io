@@ -109,7 +109,7 @@ gulp.task("templates", function() {
   var templateData = yaml.safeLoad(fs.readFileSync("data.yml", "utf-8"));
   var options = {
     ignorePartials: true, //ignores the unknown footer2 partial in the handlebars template, defaults to false
-    batch: ["./src/views/partials/"],
+    batch: ["./src/views/partials/", "./src/views/layouts/"],
     helpers: {
       capitals: function(str) {
         return str.toUpperCase();

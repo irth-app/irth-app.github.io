@@ -8,32 +8,12 @@
 [![forthebadge](http://forthebadge.com/images/badges/winter-is-coming.svg)]()
 [![](http://forthebadge.com/images/badges/check-it-out.svg)]()
 
-Project Template
+IRTH README
 ========================================
-
-#### _Because web development doesn't need to be a pain._
-
-The project template is the way to build static sites fast.  With one command, build a static page using [Webpack][webpack], [Gulp][gulp], [Handlebars.js][handlebars], and [SCSS][scss].
-
-[ES6]
-
-## Features
-
-- Install the project in just three commands (see "Developing" below).
-- Use [Handlebars.js][handlebars] to keep our HTML organized into templates and partials.
-- Use [SCSS][scss] to keep our CSS organized into logical components.
-- Use [Browsersync][browsersync] to automatically launch a development version of our website, reload the page whenever we change the HTML, and inject changes to CSS, JavaScript, and images with needing to reload.
-- Use [HTML Minifier][htmlmin], and optimize our HTML, CSS, JavaScript, and images, respectively.
-
-All with one command from the terminal:
-
-```bash
-yarn start
-```
-
 ## Setup
 
 ```bash
+npm install -g yarn  # May require `sudo`
 npm install -g gulp  # May require `sudo`
 ```
 
@@ -44,14 +24,16 @@ yarn install            # One time
 gulp serve
 ```
 
-## Reminders
+- Use [Handlebars.js][handlebars] to keep our HTML organized into templates and partials.
+- Use [SCSS][scss] to keep our CSS organized into logical components.
+- Use [Browsersync][browsersync] to automatically launch a development version of our website, reload the page whenever we change the HTML, and inject changes to CSS, JavaScript, and images with needing to reload.
+- Use [HTML Minifier][htmlmin], and optimize our HTML, CSS, JavaScript, and images, respectively.
 
-If you want to use this repo for your next project, make sure to make the following changes:
+All with one command from the terminal:
 
-1. Edit `data.yml`, filling in the HTML metadata associated with your site.
-2. Edit `package.json` providing a `name`, `version`, `description`, `license`, and `repository.url`.
-3. Remove the `.git` folder, so that you start from a fresh commit history.
-4. Edit `README.md` to your preference.
+```bash
+yarn start
+```
 
 ## Gulp Commands
 
@@ -69,7 +51,7 @@ Builds the site into the `dist` directory.  This includes:
 
 This is used for distributing an optimized version of the site (for deployment).  It includes everything from `gulp build` as well as:
 - SCSS minification
-- CSS / JS inline-sourcing 
+- CSS / JS inline-sourcing
 
 ### `gulp watch`
 
@@ -89,13 +71,14 @@ Runs `gulp watch` in the background, and serves the `dist` directory at `localho
 ├── dist/                   # Gulp builds the static site into this directory
 ├── package.json            # Dependencies
 └── src/                    # All source code
-    ├── assets/ 
+    ├── assets/
         ├── css/            # Stylesheets
         ├── font/           # Font files
         ├── img/            # Images and SVGs
         ├── js/             # Javascript libraries and scripts
     ├── views/     
-        ├── partials/       # Handlebars HTML partials that are included / extended
+        ├── layouts/       # Handlebars HTML layouts that are  extended
+        ├── partials/       # Handlebars HTML partials that are included
         └── templates/      # Handlebars HTML files, one per page on the site.
 ```
 
