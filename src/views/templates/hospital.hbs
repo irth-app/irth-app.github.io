@@ -50,12 +50,23 @@
                 </h2>
                 <div class="row">
                     <div class="col-12">
-                        <ul>
+                        <ul class="list-unstyled">
                             {{#each reviews}}
                             <li>
-                                <img class="col-sm-2 rounded-circle" src="{{profile}}">
-                                <div col-sm-8>
-                                    {{headline}}
+                                <div class="row mb-3">
+                                    <div class="col-3">
+                                        <img class="w-100 rounded-circle" src="{{profile}}">
+                                    </div>
+                                    <div class="col-9">
+                                        <div class="d-block">
+                                            {{headline}}
+                                        </div>
+                                        <div class="d-block text-orange">
+                                            {{#for rating}}
+                                            ★
+                                            {{/for}}
+                                        </div>
+                                    </div>
                                 </div>
                             </li>
                             {{/each}}

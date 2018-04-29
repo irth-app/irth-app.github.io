@@ -50,9 +50,9 @@
       "location": "123 Fake St, Cambridge MA 20192"
     }
 ],
-  "rating": [
+  "reviews": [
       {
-          "profile": "https://randomuser.me/api/portraits/women/92.jpg",
+          "profile": "https://randomuser.me/api/portraits/women/36.jpg",
           "headline": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor",
           "rating": 4
       },
@@ -62,12 +62,12 @@
           "rating": 5
       },
       {
-          "profile": "https://randomuser.me/api/portraits/women/9.jpg",
+          "profile": "https://randomuser.me/api/portraits/women/92.jpg",
           "headline": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor",
           "rating": 3
       },
       {
-          "profile": "https://randomuser.me/api/portraits/women/36.jpg",
+          "profile": "https://randomuser.me/api/portraits/women/9.jpg",
           "headline": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor",
           "rating": 2
       },
