@@ -1,16 +1,20 @@
 {{#extend "page"}}
 {{#content "content" mode="prepend"}}
+    <div class="back-button">
+        <img src="assets/img/back.png" alt="" class="w-100">
+    </div>
+    <div class="jumbo-heading"><h1 class="jumbo-heading-h1">Results</h1></div>
     <div class="results-page">
         <div  class="container">
             <!-- Filter -->
             <div class="filter">
                 <div class="row">
-                    <div class="col-xs-6">
+                    <div class="col-4">
                         <button class="btn btn-outline-secondary" type="button" data-toggle="collapse" data-target="#collapseFilter" aria-expanded="false" aria-controls="collapseFilter">
                         Filters
                         </button>
                     </div>
-                    <div class="col-xs-6">
+                    <div class="col-8">
                         <!-- <div id="tab" class="btn-group btn-group-justified" data-toggle="buttons">
                             <a href="#prices" class="btn btn-default active" data-toggle="tab">
                               <input type="radio" />Prices
@@ -43,12 +47,12 @@
                 <div class="row">
                     <div class="col-sm-12">
                         <div class="collapse" id="collapseFilter">
+                            <div class="p-2">Sort By:</div>
                           <div class="card card-body">
                               <div class="row">
                                   <div class="col-sm-12">
-                                      Sort By:
-                                      <div class="input-group mb-3">
-                                          <div class="input-group-prepend mb-3">
+                                      <div class="input-group">
+                                          <div class="input-group-prepend">
                                             <input type="radio" name="sort" id="sort-distance" class="d-none" checked>
                                             <label class="btn btn-outline-secondary" for="sort-distance">Distance</label>
                                             <input type="radio" name="sort" id="sort-Rating" class="d-none">
@@ -57,11 +61,27 @@
                                       </div>
                                   </div>
                                 </div>
+                            </div>
+                            <div class="p-2">Filter By:</div>
+                            <div class="card card-body">
                               <div class="row">
                                   <div class="col-sm-12">
-                                      Filter By:
+
+                                      <label class="" for="sort-Rating">Distance:</label>
+                                      <div class="input-group mb-3">
+                                          <input type="text" class="form-control" aria-label="Text input with dropdown button" placeholder="Zip Code">
+                                          <div class="input-group-append">
+                                              <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Miles</button>
+                                              <div class="dropdown-menu">
+                                                  <a class="dropdown-item" href="#">10 miles</a>
+                                                  <a class="dropdown-item" href="#">25 miles</a>
+                                                  <a class="dropdown-item" href="#">50 miles</a>
+                                              </div>
+                                          </div>
+                                      </div>
                                       <div class="input-group mb-3 filter-star">
-                                          <div class="input-group-prepend mb-3">
+                                          <label class="" for="sort-Rating">Overall Rating</label>
+                                          <div class="input-group-prepend mb-3 w-100">
                                             <input type="checkbox" name="filter-star" id="filter-1-star" class="d-none" >
                                             <label class="btn btn-outline-secondary text-orange" for="filter-1-star">1★</label>
                                             <input type="checkbox" name="filter-star" id="filter-2-star" class="d-none" >
@@ -75,15 +95,50 @@
                                           </div>
                                       </div>
 
-                                      <input type="checkbox" name="foo1" id="foo1" class="d-none" >
-                                      <label class="btn btn-outline-secondary text-orange full-width" for="filter-5-star">
-                                          Some Other Criteria
-                                      </label>
-
-                                      <input type="checkbox" name="foo1" id="foo1" class="d-none" >
-                                      <label class="btn btn-outline-secondary text-orange full-width" for="filter-5-star">
-                                          Yet Other Criteria
-                                      </label>
+                                      <select class="custom-select mb-3 ">
+                                          <option selected>Race</option>
+                                          <option value="1">African American</option>
+                                          <option value="2">American Indian</option>
+                                          <option value="3">Asian</option>
+                                          <option value="3">Caucasian</option>
+                                          <option value="3">Hispanic/Latina</option>
+                                          <option value="3">Multiracial</option>
+                                        </select>
+                                      <select class="custom-select mb-3 ">
+                                          <option selected>Sexual Orientation</option>
+                                          <option value="1">African American</option>
+                                          <option value="2">American Indian</option>
+                                          <option value="3">Asian</option>
+                                          <option value="3">Caucasian</option>
+                                          <option value="3">Hispanic/Latina</option>
+                                          <option value="3">Multiracial</option>
+                                        </select>
+                                      <select class="custom-select mb-3 ">
+                                          <option selected>Sexual Orientation</option>
+                                          <option value="1">Straight</option>
+                                          <option value="2">Gay</option>
+                                          <option value="3">Lesbian</option>
+                                          <option value="3">Asexual</option>
+                                          <option value="3">Bisexual</option>
+                                          <option value="3">Other</option>
+                                        </select>
+                                      <select class="custom-select mb-3 ">
+                                          <option selected>Household Income</option>
+                                          <option value="1">$25k or less</option>
+                                          <option value="2">$25k - $50k</option>
+                                          <option value="3">$50k - $75k</option>
+                                          <option value="3">$75k - $100k</option>
+                                          <option value="3">$100k +</option>
+                                        </select>
+                                      <select class="custom-select mb-3 ">
+                                          <option selected>Services</option>
+                                          <option value="1">Lactation support</option>
+                                          <option value="2">Midwife-nursing</option>
+                                          <option value="3">Free pumping equipment</option>
+                                          <option value="3">Access to support groups</option>
+                                          <option value="3">Child with disabilities</option>
+                                          <option value="3">Post-partum mental services</option>
+                                        </select>
                                   </div>
                                 </div>
                           </div>

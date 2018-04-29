@@ -3,7 +3,7 @@
 
     input[type="radio"], input[type="checkbox"] {
         &:checked + label {
-            background-color: #eff0f1;
+            background-color:  rgba(204, 78, 0, 0.1);
             color: $text-color;
         }
     }
@@ -20,7 +20,8 @@
     }
 
     .filter-star .btn {
-        padding: 0px 20px;
+        padding: 0;
+        width: 20%;
     }
 
     .full-width {
@@ -30,4 +31,9 @@
 .col-xs-6 {
     @extend .col-sm-6;
     width: 50%;
+}
+
+.input-group input[type=text]:focus {
+    border-bottom: 1px solid $orange;
+        border-right: 1px solid #51565f;
 }

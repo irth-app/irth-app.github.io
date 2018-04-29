@@ -6,12 +6,47 @@ body {
 	font-size: 14px;
 	line-height: 24px;
     color: $text-color;
+    background: #FEF8F3;
 	 -webkit-font-smoothing: antialiased !important;
 	&.has-fixed-navbar {
         min-height: 75rem;
-        padding-top: 4.5rem;
+        margin-top: 56px;
 	}
 }
+main {
+    padding-top: 150px;
+}
+.back-button {
+    position: absolute;
+    width: 50px;
+    top: 75px;
+    left: 20px;
+}
+.jumbo-heading {
+    width: 70%;
+    position: absolute;
+    right: 0%;
+    top: 0;
+    height: 400px;
+    padding: 2rem;
+    border-left: 3px solid $orange;
+    border-bottom: 3px solid $orange;
+    z-index: -1;
+}
+.jumbo-heading-h1 {
+    font-size: 2rem;
+    line-height: 1;
+    margin: 0;
+    position: absolute;
+    top: 125px;
+    left: -10%;
+    background: #FEF8F3;
+    padding: 10px 0;
+    font-weight: normal;
+    width: 100%;
+}
+.jumbo-heading {}
+
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 	color: $text-color-dark;
 	font-weight: 600;
@@ -176,4 +211,14 @@ dd, dt {
 }
 .text-orange {
     color: $orange;
+}
+.container {
+    background: $white;
+    border-radius: 2rem;
+    padding: 30px;
+    margin: 20px;
+    width: calc(100% - 40px);
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
 }
